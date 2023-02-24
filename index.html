@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Took - Enjoy your day!</title>
+
+    <!-- CSS Linked -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/res.css">
+
+    <!-- FontAwesome Kit -->
+    <script src="https://kit.fontawesome.com/69ce93ada1.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+</head>
+
+<body>
+    <header>
+        <nav class="header-main container">
+            <div class="logo">
+                <!-- <img src="/assets/images/took_logo.jpg" alt="Took"> -->
+                <h2 class="logo__title">Took</h2>
+            </div>
+            <nav class="navbar">
+                <div class="header-search">
+                    <input type="text" placeholder="Search for videos">
+                    <i class="fa-solid fa-magnifying-glass search__icon"></i>
+                </div>
+                <ul class="nav-items">
+                    <button class="upload-btn" id="upload-btn"><i class="fa-solid fa-plus"></i> Upload</button>
+                    <button class="login-btn" id="login-btn">Login</button>
+                    <a id="header-menu"><i class="fa-solid fa-bars-staggered"></i></a>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+    <!-- Login Modal -->
+    <div class="login__box">
+        <div class="modal__close"><i class="fa-solid fa-xmark close__btn"></i></div>
+        <h2>Log in to your account</h2>
+        <div class="social__login">
+            <span>
+                <i class="fa-solid fa-qrcode"></i>
+                Login using QR
+            </span>
+            <span>
+                <i class="fa-regular fa-user"></i>
+                Login using Phone
+            </span>
+            <span>
+                <i class="fa-brands fa-google"></i>
+                Login using Google
+            </span>
+            <span>
+                <i class="fa-brands fa-facebook"></i>
+                Login using Facebook
+            </span>
+            <span>
+                <i class="fa-brands fa-square-instagram"></i>
+                Login using Instagram
+            </span>
+        </div>
+        <div class="modal__singup">
+            <h4>Don't have account? <a href="">Sing up</a></h4>
+        </div>
+    </div>
+    <main class="container">
+        <aside class="sidebar">
+            <div class="sidebar__menu">
+                <h4 class="menu__item active__menu"><i class="fa-solid fa-heart"></i> For You</h4>
+                <h4 class="menu__item"><i class="fa-solid fa-arrow-trend-up"></i> Trending</h4>
+                <h4 class="menu__item"><i class="fa-solid fa-user-group"></i> Following</h4>
+            </div>
+            <div class="sidebar__login">
+                <p>
+                    Log in to like videos, and view comments.
+                </p>
+                <button class="sidebar__login-btn">Log in</button>
+            </div>
+            <div class="sidebar__hashtags">
+                <h4>Discover</h4>
+                <div class="discover__hashtags">
+                    <span class="discover__hashtag"><i class="fa-solid fa-hashtag"></i> valentine</span>
+                    <span class="discover__hashtag"><i class="fa-solid fa-hashtag"></i> amarbhasha</span>
+                    <span class="discover__hashtag"><i class="fa-solid fa-hashtag"></i> falgun</span>
+                    <span class="discover__hashtag"><i class="fa-solid fa-hashtag"></i> boimela</span>
+                    <span class="discover__hashtag"><i class="fa-solid fa-hashtag"></i> ekushey_february</span>
+                    <span class="discover__hashtag"><i class="fa-solid fa-hashtag"></i> took</span>
+                </div>
+            </div>
+        </aside>
+        <div class="main">
+            <div class="app__videos">
+                <div class="single__video">
+                    <div class="meta__information">
+                        <div class="meta__user">
+                            <div class="meta__profile">
+                                <img src="/assets/images/profile__one.jpg" class="profile__picture">
+                                <div>
+                                    <h4 class="user__name"> Nadia Jaman
+                                        <span class="badge verified">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                        </span>
+                                    </h4>
+                                    <span class="user__follower">529k followers</span>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="button-follow">Follow</button>
+                            </div>
+                        </div>
+                        <div class="meta__content">
+                            আমি বাংলায় গান গাই 🥰 #ekushey_february #boimela
+                        </div>
+                    </div>
+                    <div class="video__content__box">
+                        <div class="vidoe__content">
+                            <video src="/assets/media/video__three.mp4" controls loop class="video__player"></video>
+                            <div>
+                            </div>
+                        </div>
+                        <div class="video__meta">
+                            <span class="video__likes">
+                                <i class="fa-solid fa-heart"></i> 1.2M
+                            </span>
+                            <span class="video__comments">
+                                <i class="fa-solid fa-comment-dots"></i> 2.3K
+                            </span>
+                            <span class="video__shares">
+                                <i class="fa-solid fa-share-nodes"></i> 840
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="single__video">
+                    <div class="meta__information">
+                        <div class="meta__user">
+                            <div class="meta__profile">
+                                <img src="/assets/images/profile__twor.jpg" class="profile__picture">
+                                <div>
+                                    <h4 class="user__name"> Mustak
+                                        <span class="badge gray">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                        </span>
+                                    </h4>
+                                    <span class="user__follower">218k followers</span>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="button-follow">Follow</button>
+                            </div>
+                        </div>
+                        <div class="meta__content">
+                            Fishing in the river #took #fishing
+                        </div>
+                    </div>
+                    <div class="video__content__box">
+                        <div class="vidoe__content">
+                            <video src="/assets/media/video__one.mp4" controls loop class="video__player"></video>
+                        </div>
+                        <div class="video__meta">
+                            <span class="video__likes">
+                                <i class="fa-solid fa-heart"></i> 54k
+                            </span>
+                            <span class="video__comments">
+                                <i class="fa-solid fa-comment-dots"></i> 3K
+                            </span>
+                            <span class="video__shares">
+                                <i class="fa-solid fa-share-nodes"></i> 253
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="single__video">
+                    <div class="meta__information">
+                        <div class="meta__user">
+                            <div class="meta__profile">
+                                <img src="/assets/images/profie__three.jpg" class="profile__picture">
+                                <div>
+                                    <h4 class="user__name"> Amelia
+                                        <span class="badge verified">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                        </span>
+                                    </h4>
+                                    <span class="user__follower">1.3M followers</span>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="button-follow">Follow</button>
+                            </div>
+                        </div>
+                        <div class="meta__content">
+                            Ways to clear snow #snow #took
+                        </div>
+                    </div>
+                    <div class="video__content__box">
+                        <div class="vidoe__content">
+                            <video src="/assets/media/video__two.mp4" controls loop class="video__player"></video>
+                        </div>
+                        <div class="video__meta">
+                            <span class="video__likes">
+                                <i class="fa-solid fa-heart"></i> 21M
+                            </span>
+                            <span class="video__comments">
+                                <i class="fa-solid fa-comment-dots"></i> 13K
+                            </span>
+                            <span class="video__shares">
+                                <i class="fa-solid fa-share-nodes"></i> 3425
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/app.js"></script>
+</body>
+
+</html>

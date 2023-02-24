@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+/* Theme */
+:root {
+    --white: #FFFFFF;
+    --primary-color: #ff6900;
+    --secondary-bg: #efefef;
+}
+
+/* Utilities */
+button {
+    background: #efefef;
+    padding: .6rem 1.5rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Repeated Class */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    padding: 1rem 0;
+    background: var(--white);
+    border-bottom: 1px solid rgba(77, 77, 77, 0.084);
+    z-index: 1;
+}
+
+.header-main {
+    background: var(--white);
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo__title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.header-search {
+    background: #f5f5f5;
+    padding-right: 1.2rem;
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header-search input {
+    background: #f5f5f5;
+    padding: 1rem;
+    border: none;
+    border-radius: 24px 0 0 24px;
+    outline: none;
+    border-right: 1px solid var(--secondary-bg);
+    font-size: 16px;
+}
+
+.header-search i {
+    padding-left: .5rem;
+}
+
+.header-search .search__icon {
+    cursor: pointer;
+}
+
+.upload-btn {
+    font-weight: bold;
+    margin-right: .5rem;
+}
+
+.login-btn {
+    background: var(--primary-color);
+    color: var(--white);
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+/* Login Modal */
+.login__box {
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 37%;
+    padding: 2rem;
+    width: 400px;
+    max-width: 400px;
+    background: var(--white);
+    box-shadow: -1px 1px 30px -20px #000;
+    border-radius: 12px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.login__box h2 {
+    margin: 2rem 0;
+}
+
+.social__login {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.social__login span {
+    padding: 1rem;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    display: flex;
+    gap: 1rem;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.social__login span:hover {
+    background: var(--secondary-bg);
+    cursor: pointer;
+}
+
+.modal__close {
+    display: flex;
+    justify-content: end;
+}
+
+.close__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--secondary-bg);
+    padding: .7rem .9rem;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.modal__singup {
+    margin: 2rem 0 0 0;
+}
+
+
+/* Main Body Start */
+main {
+    position: relative;
+    display: flex;
+    gap: 5rem;
+}
+
+main.container {
+    margin-top: 2rem;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 40%;
+}
+
+.sidebar__menu {
+    border-bottom: 1px solid var(--secondary-bg);
+    padding-bottom: .5rem;
+}
+
+.sidebar__menu .menu__item {
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    gap: .7rem;
+    margin-bottom: .2rem;
+}
+
+.sidebar__menu .menu__item:hover {
+    background: var(--secondary-bg);
+    cursor: pointer;
+}
+
+.sidebar__menu .menu__item.active__menu {
+    color: var(--primary-color);
+    background: var(--secondary-bg);
+}
+
+.sidebar__login {
+    margin-top: 1rem;
+    font-size: 18px;
+}
+
+.sidebar__login-btn {
+    display: block;
+    width: 100%;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    background: var(--white);
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.sidebar__hashtags {
+    margin-top: 2rem;
+}
+
+.discover__hashtags {
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.discover__hashtag {
+    padding: .2rem .5rem;
+    border: 1px solid #21212155;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/* Main Content */
+.main {
+    width: 100%;
+}
+
+/* App Videos/Post Content */
+.meta__user {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.meta__profile {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.user__name {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.badge.verified,
+.badge.gray {
+    font-size: 14px;
+    border: 1px solid var(--secondary-bg);
+    border-radius: 100%;
+}
+
+.badge.verified {
+    color: #519ee2;
+}
+
+.badge.gray {
+    color: slategray;
+}
+
+.profile__picture {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.button-follow {
+    border: 1px solid var(--primary-color);
+    background: var(--white);
+    color: var(--primary-color);
+}
+
+.meta__content {
+    margin: .5rem 0;
+}
+
+/* Single Items */
+.video__content__box {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.single__video {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--secondary-bg);
+}
+
+.meta__content {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.vidoe__content {
+    position: relative;
+    width: 350px;
+    height: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.video__player {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.video__meta,
+.video__meta span {
+    display: flex;
+    flex-direction: column;
+}
+
+.video__meta {
+    gap: 1.5rem;
+}
+
+.video__meta span {
+    align-items: center;
+    gap: .5rem;
+}
+
+.video__likes i,
+.video__comments i,
+.video__shares i {
+    padding: 1rem;
+    border-radius: 100%;
+    background: var(--secondary-bg);
+    color: #313131;
+}
+
+@media screen and (max-width: 480px) {
+
+    /* Header */
+    .header-search,
+    .upload-btn {
+        display: none;
+    }
+
+    /* Sidebar */
+    .sidebar {
+        display: none;
+    }
+
+    /* Video Content Box */
+    .video__content__box {
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .video__meta {
+        position: absolute;
+        left: 5%;
+        color: var(--white);
+    }
+}
+
+@media screen and (min-width: 481px)and (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+}
